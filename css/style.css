@@ -1,0 +1,123 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+  color: #2e2e2e;
+  height: 150vh;
+  background: linear-gradient(100deg,#d4a373,#faedcd);
+
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+input {
+  width: 200px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  border-radius: 4px;
+  line-height: 1;
+  border: 0;
+  padding: .4rem;
+  
+}
+
+.input-section {
+  margin-bottom: 50px;
+}
+
+button {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: .6rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  border: 0;
+  touch-action: manipulation;
+}
+
+button hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+img {
+  max-height: 300px;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.non-vegan-allergens {
+  background-color: #ff0000;
+}
+
+.unknown-maybe {
+  background-color: #ffff00;
+}
+
+/******************************************
+/* TABLE
+/*******************************************/
+
+table { 
+  margin: 20px auto;
+  border-collapse: collapse;
+} 
+
+table, th, td {
+  border: 1px solid #000000;
+  background-color: #fff;
+}
+
+/******************************************
+/* ERROR ANIMATION
+/*******************************************/
+
+.error {
+  position: relative;
+  animation: shake .1s linear;
+  animation-iteration-count: 3;
+}
+
+@keyframes shake {
+  0% { left: -5px; }
+  100% { right: -5px; }
+}
